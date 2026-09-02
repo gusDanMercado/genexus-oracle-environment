@@ -1,0 +1,60 @@
+### EN MI CONTENDOR
+Lo primero que tenemos que tener es el Backup: gxcontableDP20260901.dmp
+el cual nos no da el DBA.
+y esta la guardamos en la carpeta backup de nuestro contenedor, para saber donde se 
+encuentra ejecumos:
+  docker inspect oracle11g-local --format '{{range .Mounts}}{{println .Type .Source "->" .Destination}}{{end}}'
+
+y en nuestro caso esto nos devuelve:
+  volume /var/lib/docker/volumes/oracle11g_local_data/_data -> /u01/app/oracle/oradata
+  bind /run/desktop/mnt/host/c/Users/eapaza/Documents/docker/backup -> /backup
+
+Esto quiere decir, que tenemos que pegar nuestro archivo .dmp en:
+  C:\Users\eapaza\Documents\docker\backup
+
+Para entrar al contenedor en nuestra Git Bash ejecutamos:
+  docker exec -it oracle11g-local bash
+
+Dentro del contenedor ejecutamos:
+  impdp system@XE \
+    DIRECTORY=BACKUP_DIR \
+    DUMPFILE=gxcontableDP20260901.dmp \
+    LOGFILE=verificacion_import.log \
+    SQLFILE=verificacion_import.sql
+
+  grep -o 'TABLESPACE "[^"]*"' /backup/verificacion_import.sql | sort -u
+  Este nos da: TABLESPACE "TABLASMIGRACION" --> que es el que se usa en REMAP_TABLESPACE
+  del comando que sigue despues de este.
+
+  impdp system@XE \
+    DIRECTORY=BACKUP_DIR \
+    DUMPFILE=gxcontableDP20260901.dmp \
+    LOGFILE=gxcontable_import.log \
+    SCHEMAS=GXCONTABLE \
+    REMAP_TABLESPACE=TABLASMIGRACION:USERS
+
+Ejecutamos:
+  grep -i "ORA-" /backup/gxcontable_import.log
+
+Y cuando nos pidan las credenciales utilizamos:
+usuario: SYSTEM
+contraseña: ORACLE_PASSWORD --> que es la contraseña que configure
+en mi archivo .yml
+
+### EN GENEXUS
+Tambien tenemos que cambiar REPOSITORY ID para que NO apunte al de 
+produccion, para esto ejecutamos en mi PowerShell (como administrador):
+  [guid]::NewGuid().ToString()
+y este me genera un codigo que es el que tenemos que pegar en el campo 
+REPOSITORY ID
+
+EDITAR/CONFIGURAR EL DATASTORE PARA QUE APUNTE A MI CONTENEDOR 
+ORACLE (VER IMAGENES ADJUNTAS)
+
+como restaure con un backup de produccion y este esta configurado con el GAM de produccion
+tenemos que realizar en Genexus:
+  Tools → GAM → Create tables;
+Para que me cree todas las tablas de GAM nuevamente
+
+DESPUES DE REVISAR SI O SI TODO LO ANTERIOR RECIEN HACER:
+  Rebuild All, RUN y ver si funciona todo OK!!!!

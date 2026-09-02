@@ -1,0 +1,29 @@
+services:
+  oracle11g:
+    image: gvenzl/oracle-xe:11
+    container_name: oracle11g-local
+    hostname: oracle11g-local
+    restart: unless-stopped
+
+    ports:
+      - "1521:1521"
+
+    environment:
+      # Puede sobreescribirse definiendo ORACLE_PASSWORD en el entorno
+      ORACLE_PASSWORD: "admin123"
+
+    # Memoria compartida para Oracle
+    shm_size: "1g"
+
+    volumes:
+      # Persistencia de los datafiles de Oracle.
+      # No se pierden al recrear el contenedor.
+      - oracle11g_data:/u01/app/oracle/oradata
+
+      # Carpeta local donde colocar los .dmp de Data Pump.
+      # Crear una carpeta "backup" junto a este archivo YML.
+      - ./backup:/backup
+
+volumes:
+  oracle11g_data:
+    name: oracle11g_local_data

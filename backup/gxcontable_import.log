@@ -1,0 +1,296 @@
+;;; 
+Import: Release 11.2.0.2.0 - Production on Tue Sep 1 15:19:33 2026
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Master table "SYSTEM"."SYS_IMPORT_SCHEMA_01" successfully loaded/unloaded
+Starting "SYSTEM"."SYS_IMPORT_SCHEMA_01":  system/********@XE DIRECTORY=BACKUP_DIR DUMPFILE=gxcontableDP20260901.dmp LOGFILE=gxcontable_import.log SCHEMAS=GXCONTABLE REMAP_TABLESPACE=TABLASMIGRACION:USERS 
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+. . imported "GXCONTABLE"."EXISTENCIAS"                  3.185 MB    8660 rows
+. . imported "GXCONTABLE"."EXISTENCIASDETALLE"           3.405 MB   91417 rows
+. . imported "GXCONTABLE"."PRODUCTOS"                    2.081 MB    7713 rows
+. . imported "GXCONTABLE"."APPPERMISSION"                781.3 KB     432 rows
+. . imported "GXCONTABLE"."ROLEAPPPRM"                   493.4 KB     433 rows
+. . imported "GXCONTABLE"."PROVEEDORES"                  399.0 KB    2861 rows
+. . imported "GXCONTABLE"."APPMENUOPTIONLNG"             289.5 KB     270 rows
+. . imported "GXCONTABLE"."Session"                      124.9 KB      72 rows
+. . imported "GXCONTABLE"."FUENTESABASTECIMIENTO"        190.7 KB    1873 rows
+. . imported "GXCONTABLE"."APPPRMMEMPRM"                 94.12 KB     264 rows
+. . imported "GXCONTABLE"."SYSCONNECTIONCONFIG"          15.12 KB       9 rows
+. . imported "GXCONTABLE"."User"                         54.64 KB       5 rows
+. . imported "GXCONTABLE"."AGRUPROVE"                    11.82 KB      81 rows
+. . imported "GXCONTABLE"."APPENVIRONMENT"               19.39 KB       5 rows
+. . imported "GXCONTABLE"."APPLICATION"                  35.01 KB       5 rows
+. . imported "GXCONTABLE"."APPLICATIONNUM"               7.257 KB       6 rows
+. . imported "GXCONTABLE"."APPLICATIONPROP"              47.13 KB     185 rows
+. . imported "GXCONTABLE"."APPMENU"                      16.87 KB       6 rows
+. . imported "GXCONTABLE"."APPMENULNG"                   44.67 KB      36 rows
+. . imported "GXCONTABLE"."APPMENUOPTION"                52.02 KB      32 rows
+. . imported "GXCONTABLE"."APPMENUOPTIONPROP"            12.05 KB      16 rows
+. . imported "GXCONTABLE"."ASIENTODESCRIPCION"           8.226 KB       1 rows
+. . imported "GXCONTABLE"."ASIENTOORIGEN"                7.820 KB       2 rows
+. . imported "GXCONTABLE"."ASIENTOTIPOS"                 8.195 KB       1 rows
+. . imported "GXCONTABLE"."AUTHENTICATIONTYPE"           9.835 KB       2 rows
+. . imported "GXCONTABLE"."CATEGORIASIVA"                8.968 KB       6 rows
+. . imported "GXCONTABLE"."CENTROCOSTO"                  33.56 KB     266 rows
+. . imported "GXCONTABLE"."COMPROBANTES"                 17.22 KB     107 rows
+. . imported "GXCONTABLE"."COMPROBANTESCLASE"            8.828 KB       4 rows
+. . imported "GXCONTABLE"."CONFIGPRESU"                  8.171 KB       1 rows
+. . imported "GXCONTABLE"."CONFIGURACIONCONTA"           7.351 KB       1 rows
+. . imported "GXCONTABLE"."DEPOSITOS"                    12.53 KB      48 rows
+. . imported "GXCONTABLE"."DISTRITOSCOMPRA"              8.625 KB      18 rows
+. . imported "GXCONTABLE"."EJERCICIOS"                       9 KB       1 rows
+. . imported "GXCONTABLE"."GRUPOSAUTORIZACION"           8.890 KB      16 rows
+. . imported "GXCONTABLE"."GRUPOSCOMPRA"                 8.703 KB      20 rows
+. . imported "GXCONTABLE"."GRUPOSPRODUCTO"               10.53 KB      27 rows
+. . imported "GXCONTABLE"."LOCALIDADES"                  22.07 KB     222 rows
+. . imported "GXCONTABLE"."MODULOS"                      7.664 KB       1 rows
+. . imported "GXCONTABLE"."MONEDAS"                      7.242 KB       1 rows
+. . imported "GXCONTABLE"."ORGANIGRAMA"                  6.476 KB       2 rows
+. . imported "GXCONTABLE"."ORGANIGRAMATIPO"              5.679 KB       7 rows
+. . imported "GXCONTABLE"."PARAMETROSSISTEMA"            7.031 KB       5 rows
+. . imported "GXCONTABLE"."PERIODOS"                     8.992 KB      12 rows
+. . imported "GXCONTABLE"."PLANCUENTAS"                  54.05 KB     374 rows
+. . imported "GXCONTABLE"."PLANCUENTASRELA"              14.06 KB     169 rows
+. . imported "GXCONTABLE"."PRESUESTRUCINFO"                  9 KB      14 rows
+. . imported "GXCONTABLE"."PRESUPUESTOS"                 9.929 KB       1 rows
+. . imported "GXCONTABLE"."PROYECTOSCOMPRA"              8.226 KB       1 rows
+. . imported "GXCONTABLE"."REPOSITORY"                   30.42 KB       2 rows
+. . imported "GXCONTABLE"."REPOSITORYCONNECTION"         14.85 KB       2 rows
+. . imported "GXCONTABLE"."REPOSITORYNUM"                6.796 KB       6 rows
+. . imported "GXCONTABLE"."REPOSITORYPROP"               16.50 KB      49 rows
+. . imported "GXCONTABLE"."ROLE"                         16.35 KB       6 rows
+. . imported "GXCONTABLE"."RUBROPORCUENTA"               20.41 KB     169 rows
+. . imported "GXCONTABLE"."SECTORES"                     8.429 KB      11 rows
+. . imported "GXCONTABLE"."SECURITYPOLICY"               16.29 KB       2 rows
+. . imported "GXCONTABLE"."SECURITYPOLICYPROP"           7.210 KB       2 rows
+. . imported "GXCONTABLE"."SESSIONLOGATT"                7.820 KB       5 rows
+. . imported "GXCONTABLE"."SUBGRUPOSPRODUC"              22.55 KB     228 rows
+. . imported "GXCONTABLE"."SYSPAR"                       7.687 KB       4 rows
+. . imported "GXCONTABLE"."TIPOSFUENTE"                  8.023 KB      18 rows
+. . imported "GXCONTABLE"."UNIDADESMEDIDA"               8.148 KB      12 rows
+. . imported "GXCONTABLE"."UNIDADESOPERATIVAS"           8.281 KB      14 rows
+. . imported "GXCONTABLE"."UNIDADESPRESUPUESTARIAS"      8.773 KB      20 rows
+. . imported "GXCONTABLE"."UNIPRESUXDISTR"               8.304 KB      23 rows
+. . imported "GXCONTABLE"."USERAPPPRM"                   29.64 KB      15 rows
+. . imported "GXCONTABLE"."USERMEMROLE"                  8.312 KB       4 rows
+. . imported "GXCONTABLE"."USERPROP"                     6.859 KB       2 rows
+. . imported "GXCONTABLE"."USERREPOSITORY"               12.85 KB       6 rows
+. . imported "GXCONTABLE"."APPAUTHREQ"                       0 KB       0 rows
+. . imported "GXCONTABLE"."APPENVIRONMENTLNG"                0 KB       0 rows
+. . imported "GXCONTABLE"."APPLICATIONLNG"                   0 KB       0 rows
+. . imported "GXCONTABLE"."APPMENUPROP"                      0 KB       0 rows
+. . imported "GXCONTABLE"."APPPERMISSIONLNG"                 0 KB       0 rows
+. . imported "GXCONTABLE"."APPPERMISSIONPROP"                0 KB       0 rows
+. . imported "GXCONTABLE"."APPPRMTOKENTYPE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."APPPRMTOKENTYPEELE"               0 KB       0 rows
+. . imported "GXCONTABLE"."APPPRMTOKENTYPELNG"               0 KB       0 rows
+. . imported "GXCONTABLE"."APPROLE"                          0 KB       0 rows
+. . imported "GXCONTABLE"."APPROLEREST"                      0 KB       0 rows
+. . imported "GXCONTABLE"."APPTYPE"                          0 KB       0 rows
+. . imported "GXCONTABLE"."APPTYPEACTION"                    0 KB       0 rows
+. . imported "GXCONTABLE"."APPTYPEPERMISSION"                0 KB       0 rows
+. . imported "GXCONTABLE"."APPTYPEPRMMEMPRM"                 0 KB       0 rows
+. . imported "GXCONTABLE"."APPTYPERESOURCE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."ASIENTOCABECERA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."ASIENTOCABECERALINEA"             0 KB       0 rows
+. . imported "GXCONTABLE"."AUDITORY"                         0 KB       0 rows
+. . imported "GXCONTABLE"."AUDITORYACTION"                   0 KB       0 rows
+. . imported "GXCONTABLE"."AUDITORYACTIONLNG"                0 KB       0 rows
+. . imported "GXCONTABLE"."AUTHENTICATIONTYPELNG"            0 KB       0 rows
+. . imported "GXCONTABLE"."AUTHENTICATIONTYPEPROP"           0 KB       0 rows
+. . imported "GXCONTABLE"."AUTOMOTORESCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."AUTOMOTORESDETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."AUXILIARES"                       0 KB       0 rows
+. . imported "GXCONTABLE"."AUXILIARTIPOS"                    0 KB       0 rows
+. . imported "GXCONTABLE"."BANCOCORRECTORCABE"               0 KB       0 rows
+. . imported "GXCONTABLE"."BANCOCORRECTORDETA"               0 KB       0 rows
+. . imported "GXCONTABLE"."BIENMUEBLES"                      0 KB       0 rows
+. . imported "GXCONTABLE"."BROWSER"                          0 KB       0 rows
+. . imported "GXCONTABLE"."COMPRADORES"                      0 KB       0 rows
+. . imported "GXCONTABLE"."COMPRADORXGRUPCOMP"               0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBANTESCOMPRA"               0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBANTESRESTO"                0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBCOSTO"                     0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBLISTADOCABE"               0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBLISTADOCTOCOSTO"           0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBLISTADODETALLE"            0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBRELA"                      0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBXGP"                       0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBXPROD"                     0 KB       0 rows
+. . imported "GXCONTABLE"."COMPROBXSGP"                      0 KB       0 rows
+. . imported "GXCONTABLE"."CONDIPAGO"                        0 KB       0 rows
+. . imported "GXCONTABLE"."COUNTRY"                          0 KB       0 rows
+. . imported "GXCONTABLE"."COUNTRYLNG"                       0 KB       0 rows
+. . imported "GXCONTABLE"."CUENTAPORTIPOAUX"                 0 KB       0 rows
+. . imported "GXCONTABLE"."CUENTASXGRUPO"                    0 KB       0 rows
+. . imported "GXCONTABLE"."CUENTASXUSUARIO"                  0 KB       0 rows
+. . imported "GXCONTABLE"."DEPOSITOSHISTORICO"               0 KB       0 rows
+. . imported "GXCONTABLE"."DEVOLUCION"                       0 KB       0 rows
+. . imported "GXCONTABLE"."DEVOLUCIONPRODUCTO"               0 KB       0 rows
+. . imported "GXCONTABLE"."DEVOLUCIONUNIDAD"                 0 KB       0 rows
+. . imported "GXCONTABLE"."DEVOTEMP"                         0 KB       0 rows
+. . imported "GXCONTABLE"."ELECBOMBATLASCABE"                0 KB       0 rows
+. . imported "GXCONTABLE"."ELECBOMBATLASDETA"                0 KB       0 rows
+. . imported "GXCONTABLE"."ELECBOMBUAFCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."ELECBOMBUAFDETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."EQUIPODOSIFICADORCABE"            0 KB       0 rows
+. . imported "GXCONTABLE"."EQUIPODOSIFICADORDETA"            0 KB       0 rows
+. . imported "GXCONTABLE"."EQUIPOSCOMUNICCABE"               0 KB       0 rows
+. . imported "GXCONTABLE"."EQUIPOSCOMUNICDETA"               0 KB       0 rows
+. . imported "GXCONTABLE"."EVENTSUSCRIPTION"                 0 KB       0 rows
+. . imported "GXCONTABLE"."EVENTSUSCRIPTIONPROP"             0 KB       0 rows
+. . imported "GXCONTABLE"."EXISDETMOV"                       0 KB       0 rows
+. . imported "GXCONTABLE"."FACTUPROVECABE"                   0 KB       0 rows
+. . imported "GXCONTABLE"."FACTUPROVECABEITEMSF"             0 KB       0 rows
+. . imported "GXCONTABLE"."FACTUPROVEIMPU"                   0 KB       0 rows
+. . imported "GXCONTABLE"."FAMILIAS"                         0 KB       0 rows
+. . imported "GXCONTABLE"."FUENTESCATADGIAGRUCABE"           0 KB       0 rows
+. . imported "GXCONTABLE"."FUENTESCATADGIAGRUDETA"           0 KB       0 rows
+. . imported "GXCONTABLE"."FUENTESDGIDETALLCABE"             0 KB       0 rows
+. . imported "GXCONTABLE"."FUENTESDGIDETALLDETA"             0 KB       0 rows
+. . imported "GXCONTABLE"."GXA0017"                          0 KB       0 rows
+. . imported "GXCONTABLE"."HARDWARECABE"                     0 KB       0 rows
+. . imported "GXCONTABLE"."HARDWAREDETA"                     0 KB       0 rows
+. . imported "GXCONTABLE"."HERRAMIENTASCABE"                 0 KB       0 rows
+. . imported "GXCONTABLE"."HERRAMIENTASDETA"                 0 KB       0 rows
+. . imported "GXCONTABLE"."INSTALESTADOORICABE"              0 KB       0 rows
+. . imported "GXCONTABLE"."INSTALESTADOORIDETA"              0 KB       0 rows
+. . imported "GXCONTABLE"."INTEGRACIONEXISTCONTROL"          0 KB       0 rows
+. . imported "GXCONTABLE"."LABORATORIOCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."LABORATORIODETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."LETRASFACTU"                      0 KB       0 rows
+. . imported "GXCONTABLE"."LOGINTMP"                         0 KB       0 rows
+. . imported "GXCONTABLE"."LUGARESENTREGA"                   0 KB       0 rows
+. . imported "GXCONTABLE"."MAQUINARIASCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."MAQUINARIASDETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."MATRIZFUENTENRESPCABE"            0 KB       0 rows
+. . imported "GXCONTABLE"."MATRIZFUENTENRESPDETA"            0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESBAJACABE"                0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESBAJADETA"                0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESENRESPCABE"              0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESENRESPDETA"              0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESNGCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."MEDIDORESNGDETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."NIVELAUTO"                        0 KB       0 rows
+. . imported "GXCONTABLE"."OAUTHGRANTUSERAPP"                0 KB       0 rows
+. . imported "GXCONTABLE"."OFICINASCOMERCIALESCABE"          0 KB       0 rows
+. . imported "GXCONTABLE"."OFICINASCOMERCIALESDETA"          0 KB       0 rows
+. . imported "GXCONTABLE"."OPERATINGSYSTEM"                  0 KB       0 rows
+. . imported "GXCONTABLE"."ORDENCOMPRACABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."ORDENCOMPRACABEITEMSC"            0 KB       0 rows
+. . imported "GXCONTABLE"."ORGANIGRAMAHISTORICO"             0 KB       0 rows
+. . imported "GXCONTABLE"."ORGANISMOORIGENCABE"              0 KB       0 rows
+. . imported "GXCONTABLE"."ORGANISMOORIGENDETA"              0 KB       0 rows
+. . imported "GXCONTABLE"."PAIS"                             0 KB       0 rows
+. . imported "GXCONTABLE"."PRESUPUESTOSDETALLE"              0 KB       0 rows
+. . imported "GXCONTABLE"."PRODUCCUENTASTIPOS"               0 KB       0 rows
+. . imported "GXCONTABLE"."PRODUCXCUENTAS"                   0 KB       0 rows
+. . imported "GXCONTABLE"."PRODUCXUNIMED"                    0 KB       0 rows
+. . imported "GXCONTABLE"."PROVINCIA"                        0 KB       0 rows
+. . imported "GXCONTABLE"."REDESAGUACABE"                    0 KB       0 rows
+. . imported "GXCONTABLE"."REDESAGUADETA"                    0 KB       0 rows
+. . imported "GXCONTABLE"."REDESCLOACACABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."REDESCLOACADETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."REPOSITORYCONNADD"                0 KB       0 rows
+. . imported "GXCONTABLE"."REPOSITORYCOUNTRY"                0 KB       0 rows
+. . imported "GXCONTABLE"."REPOSITORYLNG"                    0 KB       0 rows
+. . imported "GXCONTABLE"."REPQUESTIONUSER"                  0 KB       0 rows
+. . imported "GXCONTABLE"."REPQUESTIONUSERLNG"               0 KB       0 rows
+. . imported "GXCONTABLE"."REQUECABECERA"                    0 KB       0 rows
+. . imported "GXCONTABLE"."REQUECABECERAREQUEITEMS"          0 KB       0 rows
+. . imported "GXCONTABLE"."RESPONSXCOMPROB"                  0 KB       0 rows
+. . imported "GXCONTABLE"."RETENGCIAS"                       0 KB       0 rows
+. . imported "GXCONTABLE"."ROLEAPPPRMPROP"                   0 KB       0 rows
+. . imported "GXCONTABLE"."ROLEAPPTYPEPRM"                   0 KB       0 rows
+. . imported "GXCONTABLE"."ROLEAPPTYPEPRMPROP"               0 KB       0 rows
+. . imported "GXCONTABLE"."ROLELNG"                          0 KB       0 rows
+. . imported "GXCONTABLE"."ROLEMEMROLE"                      0 KB       0 rows
+. . imported "GXCONTABLE"."ROLEPROP"                         0 KB       0 rows
+. . imported "GXCONTABLE"."RUBROSCOMPRAS"                    0 KB       0 rows
+. . imported "GXCONTABLE"."RUBROXCUENTACOMPRAS"              0 KB       0 rows
+. . imported "GXCONTABLE"."SECURITYPOLICYLNG"                0 KB       0 rows
+. . imported "GXCONTABLE"."SESSIONHISTORY"                   0 KB       0 rows
+. . imported "GXCONTABLE"."SESSIONHISTORYLOG"                0 KB       0 rows
+. . imported "GXCONTABLE"."SESSIONHISTORYLOGATT"             0 KB       0 rows
+. . imported "GXCONTABLE"."SESSIONLOG"                       0 KB       0 rows
+. . imported "GXCONTABLE"."SOFTWARECABE"                     0 KB       0 rows
+. . imported "GXCONTABLE"."SOFTWAREDETA"                     0 KB       0 rows
+. . imported "GXCONTABLE"."TABLEROSUAFCABE"                  0 KB       0 rows
+. . imported "GXCONTABLE"."TABLEROSUAFDETA"                  0 KB       0 rows
+. . imported "GXCONTABLE"."TIPOBIENMUEBLES"                  0 KB       0 rows
+. . imported "GXCONTABLE"."UBICACIONTEST"                    0 KB       0 rows
+. . imported "GXCONTABLE"."USERAPP"                          0 KB       0 rows
+. . imported "GXCONTABLE"."USERAPPPRMPROP"                   0 KB       0 rows
+. . imported "GXCONTABLE"."USERAPPPROP"                      0 KB       0 rows
+. . imported "GXCONTABLE"."USERATT"                          0 KB       0 rows
+. . imported "GXCONTABLE"."USERATTMULTIVALUE"                0 KB       0 rows
+. . imported "GXCONTABLE"."USERHISPWD"                       0 KB       0 rows
+. . imported "GXCONTABLE"."USERMEMAPPROLE"                   0 KB       0 rows
+. . imported "GXCONTABLE"."USERMEMAPPROLEPROP"               0 KB       0 rows
+. . imported "GXCONTABLE"."USERMEMAPPROLEREST"               0 KB       0 rows
+. . imported "GXCONTABLE"."USERMEMROLEPROP"                  0 KB       0 rows
+. . imported "GXCONTABLE"."USERREPOSITORYPROP"               0 KB       0 rows
+. . imported "GXCONTABLE"."USUARIOSXMODULO"                  0 KB       0 rows
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_CARGA_INT_EXIST_CTRL_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP 
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_CLASIF_MOV_DET_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP '2026-
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_PROCESAR_DEVOLUCIONES_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_PROC_EGR_EXIST_DET_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP '2
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_PROCESAR_EXISTENCIAS_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP 
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_PROC_ING_EXIST_DET_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP '2
+ORA-39083: Object type ALTER_PROCEDURE failed to create with error:
+ORA-04052: error occurred when looking up remote object DBO.INTEGRACIONEXISTENCIAS@MSSQL
+ORA-00604: error occurred at recursive SQL level 3
+ORA-02019: connection description for remote database not found
+Failing sql is:
+
+ALTER PROCEDURE "GXCONTABLE"."SP_PROC_TRANSF_EXIST_DET_AMER"   COMPILE     PLSQL_OPTIMIZE_LEVEL=  2    PLSQL_CODE_TYPE=  INTERPRETED    PLSQL_DEBUG=  FALSE    PLSCOPE_SETTINGS=  'IDENTIFIERS:NONE' REUSE SETTINGS TIMESTAMP
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/FUNCTIONAL_INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/FUNCTIONAL_INDEX/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Job "SYSTEM"."SYS_IMPORT_SCHEMA_01" completed with 7 error(s) at 15:20:48

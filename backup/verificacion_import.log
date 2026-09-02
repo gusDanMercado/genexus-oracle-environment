@@ -1,0 +1,20 @@
+;;; 
+Import: Release 11.2.0.2.0 - Production on Tue Sep 1 15:10:44 2026
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Master table "SYSTEM"."SYS_SQL_FILE_FULL_01" successfully loaded/unloaded
+Starting "SYSTEM"."SYS_SQL_FILE_FULL_01":  system/********@XE DIRECTORY=BACKUP_DIR DUMPFILE=gxcontableDP20260901.dmp LOGFILE=verificacion_import.log SQLFILE=verificacion_import.sql 
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/FUNCTIONAL_INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/FUNCTIONAL_INDEX/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Job "SYSTEM"."SYS_SQL_FILE_FULL_01" successfully completed at 15:11:12

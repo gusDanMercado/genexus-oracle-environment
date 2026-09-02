@@ -1,0 +1,37 @@
+IMPORTANTE SOBRE GAM
+
+El backup del esquema GXCONTABLE también contiene las tablas y
+datos GAM del servidor original.
+
+Como queremos un GAM LOCAL nuevo y no utilizar usuarios,
+contraseñas y Repository del servidor:
+
+1. Generar un Repository ID nuevo:
+
+   [guid]::NewGuid().ToString()
+
+2. Configurarlo en:
+   Environment → Integrated Security → Repository ID
+
+3. Configurar credenciales GAM locales nuevas:
+   - Administrator User Name
+   - Administrator User Password
+   - Connection User Name
+   - Connection User Password
+
+4. Verificar que el Data Store GAM apunte al Oracle Docker:
+
+   Database name: XE
+   Server name: localhost
+   Port: 1521
+   User id: GXCONTABLE
+
+5. Ejecutar:
+   Tools → GAM → Create tables
+
+6. Verificar en Oracle que el Repository y los usuarios
+   correspondan al GAM LOCAL y no al GAM importado.
+
+7. Recién después:
+   Rebuild All
+   Run
