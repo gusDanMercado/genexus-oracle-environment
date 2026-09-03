@@ -120,3 +120,119 @@ grep -i "ORA-" /backup/gxcontable_import.log
 ```
 
 Y cuando ejecutemos los comandos anteriores y nos pidan las credenciales utilizamos la contraseña: **ORACLE_PASSWORD** --> que es la contraseña que configure en mi archivo .yml
+
+## Database Link (DBLink)
+Necesito crear un **DBLink** de **Oracle 11g** a **SQL Server 2005**  
+Para esto realizamos:  
+Primero revisamos si tenemos instalado **dg4odbc** en nuesto contenedor, para esto ejecutamos:
+```bash
+echo $ORACLE_HOME
+```
+Esto nos confirma qu estamos usando Oracle Database 11g XE y para verificar si tenemos instalado/configurado **dg4odbc** buscamos los siguientes directorios: 
+```bash
+ls -l /u01/app/oracle/product/11.2.0/xe/bin/dg4odbc  -- OK!!!
+ls -l /u01/app/oracle/product/11.2.0/xe/hs/admin     -- OK!!!
+ls -ld /u01/app/oracle/product/11.2.0/xe/hs          -- OK!!!
+uname -m                                             -- OK!!! (nos devolvio x86_64)
+cat /etc/os-release                                  -- ERROR
+odbcinst -j                                          -- ERROR
+file /u01/app/oracle/product/11.2.0/xe/bin/dg4odbc   -- ERROR
+which dnf                                            -- ERROR
+which yum                                            -- ERROR
+dnf repolist                                         -- ERROR
+tsql -C                                              -- ERROR
+```
+
+Como los ultimos comandos anteriores no dieron errores de "command not found" salimos del contenedor y se logeamos como **root** (-u 0 --> sale el signo # en lugar del signo $) con el comando:
+```bash
+docker exec -u 0 -it oracle11g-local bash
+```
+
+Aqui ejecutamos los comandos:
+```bash
+id                      -- uid=0(root) gid=0(root) groups=0(root)
+command -v microdnf     -- OK!!!
+command -v rpm          -- OK!!!
+command -v dnf          -- VACIO (ES DECIR, NO LO TENGO INSTALADO)
+command -v yum          -- VACIO (ES DECIR, NO LO TENGO INSTALADO)
+ls -l /usr/bin/microdnf /usr/bin/rpm /usr/bin/dnf /usr/bin/yum 2>/dev/null      -- OK!!!
+rpm -qa | grep -Ei 'odbc|freetds'                                               -- VACIO (ES DECIR, NO LO TENGO INSTALADO)
+```
+
+Ahora vamos a ver los repositorios que tenemos habilitados:
+```bash
+microdnf repolist
+```
+Esto nos confirma que tenemos el repositorio estandar de Oracle Linux 8 (ol8_appstream, ol8_baseos_latest)
+
+Instalamos **unixODBC**
+```bash
+microdnf install -y unixODBC
+odbcinst -j                  -- para verificar si se instalo bien
+isql --version               -- nos dice la version que tenemos de unixODBC
+rpm -qa | grep -i odbc       -- nos devuelve unixODBC-2.3.7-2.el8_10.x86_64
+```
+
+Ahora instalamos **FreeTDS** que es el Driver que se encarga de hablar con **SQL Server 2005**.   
+Pero para hacer esto primero tenemos que habilitar el repositorio **EPEL** 
+```bash
+microdnf install -y oracle-epel-release-el8
+microdnf repolist                               -- para verificar el listado de paquetes
+```
+
+Ahora si podemos instalar **FreeTDS** con el comando
+```bash
+microdnf install -y freetds
+```
+
+Ultimo control de los paquetes instalados, me tiene que dar:  
+![imagen](img\DBLink.png)
+
+Asta aqui ya tenemos todos los paquetes necesarios para comunicarse con SQL Server 2005.
+
+Ahora salimos del usuario root y reiniciamos el contenedor y ya no utilizamos el usuario root.  
+
+Para probar la coneccion ingremos nuevamente a nuestro contenedor y ejecutamos:
+```bash
+tsql -H 172.16.109.7 -p 3750 -U america
+
+TDSVER=7.2 tsql -H 172.16.109.7 -p 3750 -U america
+
+timeout 5 bash -c 'cat < /dev/null > /dev/tcp/172.16.109.7/3750' && echo "PUERTO OK" || echo "PUERTO NO ACCESIBLE"
+
+TDSDUMP=/tmp/tds.log TDSVER=7.2 tsql -H 172.16.109.7 -p 3750 -U america
+
+LANG=C.UTF-8 TDSVER=7.2 tsql -H 172.16.109.7 -p 3750 -U america
+
+LANG=en_US.UTF-8 TDSVER=7.2 tsql -H 172.16.109.7 -p 3750 -U america
+```
+
+No se conecto con ninguno de estos comandos ya que esta deshabilitando TLS 1.0 y TLS 1.1  
+Para solucionar esto nos volvemos a logear como root y ejecutamos:
+```bash
+update-crypto-policies --show                    -- ERROR
+cat /etc/freetds.conf                            -- EJECUTAMOS ESTE E IGNORAMOS EL ANTERIOR ES CASO DE QUE EL ANTERIOR DE ERROR
+cp /etc/freetds.conf /etc/freetds.conf.bak       -- HACEMOS UNA COPIA DEL ARHIVO freetds.conf  
+
+-- AGREGAMOS LA CONECCION AL FINAL DEL ARCHIVO freetds.conf  
+cat >> /etc/freetds.conf <<'EOF'
+
+[MSSQL2005]
+    host = 172.16.109.7
+    port = 3750
+    tds version = 7.2
+    client charset = UTF-8
+    enable tls v1 = yes
+EOF
+
+tail -n 10 /etc/freetds.conf            -- PARA VER SI SE AGREGO CORRECTAMENTE LA CONECCION
+```
+
+Ahora salimos del root, reiniciamos nuestro contenedor y volvemos a ingresar par ejecutar:
+```bash
+
+```
+
+
+
+
