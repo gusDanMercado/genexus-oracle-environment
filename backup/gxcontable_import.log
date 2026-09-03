@@ -1,5 +1,5 @@
 ;;; 
-Import: Release 11.2.0.2.0 - Production on Tue Sep 1 15:19:33 2026
+Import: Release 11.2.0.2.0 - Production on Thu Sep 3 15:27:10 2026
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 ;;; 
@@ -293,4 +293,4 @@ Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
 Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/FUNCTIONAL_INDEX/INDEX_STATISTICS
 Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
 Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
-Job "SYSTEM"."SYS_IMPORT_SCHEMA_01" completed with 7 error(s) at 15:20:48
+Job "SYSTEM"."SYS_IMPORT_SCHEMA_01" completed with 7 error(s) at 15:28:24
