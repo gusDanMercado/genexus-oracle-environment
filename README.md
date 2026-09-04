@@ -186,7 +186,7 @@ microdnf install -y freetds
 ```
 
 Ultimo control de los paquetes instalados, me tiene que dar:  
-![imagen](img\DBLink.png)
+![imagen](img/DBLink.png)
 
 Asta aqui ya tenemos todos los paquetes necesarios para comunicarse con SQL Server 2005.
 
@@ -469,3 +469,6 @@ SELECT *
 FROM "auxiliares"@MSSQL
 WHERE UPPER("auxi_tipo") LIKE '%LOCAL%';
 ```
+
+## Flujo de Conexion Completo
+![imagen](img/flujodeconexion.png)
