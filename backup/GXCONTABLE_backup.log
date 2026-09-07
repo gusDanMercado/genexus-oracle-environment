@@ -1,0 +1,255 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Mon Sep 7 14:09:34 2026
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Starting "GXCONTABLE"."SYS_EXPORT_SCHEMA_01":  GXCONTABLE/********@XE schemas=GXCONTABLE directory=BACKUP_DIR dumpfile=GXCONTABLE_backup.dmp logfile=GXCONTABLE_backup.log 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 19.43 MB
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/DB_LINK
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/FUNCTIONAL_AND_BITMAP/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/FUNCTIONAL_AND_BITMAP/INDEX_STATISTICS
+. . exported "GXCONTABLE"."EXISTENCIASDETALLE"           3.405 MB   91417 rows
+. . exported "GXCONTABLE"."EXISTENCIAS"                  3.185 MB    8660 rows
+. . exported "GXCONTABLE"."PRODUCTOS"                    2.081 MB    7713 rows
+. . exported "GXCONTABLE"."APPPERMISSION"                781.3 KB     432 rows
+. . exported "GXCONTABLE"."ROLEAPPPRM"                   493.4 KB     433 rows
+. . exported "GXCONTABLE"."PROVEEDORES"                  399.0 KB    2861 rows
+. . exported "GXCONTABLE"."APPMENUOPTIONLNG"             289.5 KB     270 rows
+. . exported "GXCONTABLE"."Session"                      124.8 KB      72 rows
+. . exported "GXCONTABLE"."FUENTESABASTECIMIENTO"        190.7 KB    1873 rows
+. . exported "GXCONTABLE"."APPLICATIONPROP"              47.11 KB     185 rows
+. . exported "GXCONTABLE"."APPMENULNG"                   44.66 KB      36 rows
+. . exported "GXCONTABLE"."APPMENUOPTION"                51.97 KB      32 rows
+. . exported "GXCONTABLE"."APPPRMMEMPRM"                 94.10 KB     264 rows
+. . exported "GXCONTABLE"."PLANCUENTAS"                  54.00 KB     374 rows
+. . exported "GXCONTABLE"."SYSCONNECTIONCONFIG"          15.10 KB       9 rows
+. . exported "GXCONTABLE"."User"                         54.52 KB       5 rows
+. . exported "GXCONTABLE"."AGRUPROVE"                    11.79 KB      81 rows
+. . exported "GXCONTABLE"."APPENVIRONMENT"               19.35 KB       5 rows
+. . exported "GXCONTABLE"."APPLICATION"                  34.94 KB       5 rows
+. . exported "GXCONTABLE"."APPLICATIONNUM"               7.242 KB       6 rows
+. . exported "GXCONTABLE"."APPMENU"                      16.84 KB       6 rows
+. . exported "GXCONTABLE"."APPMENUOPTIONPROP"            12.03 KB      16 rows
+. . exported "GXCONTABLE"."ASIENTODESCRIPCION"           8.210 KB       1 rows
+. . exported "GXCONTABLE"."ASIENTOORIGEN"                7.804 KB       2 rows
+. . exported "GXCONTABLE"."ASIENTOTIPOS"                 8.171 KB       1 rows
+. . exported "GXCONTABLE"."AUTHENTICATIONTYPE"           9.804 KB       2 rows
+. . exported "GXCONTABLE"."CATEGORIASIVA"                8.945 KB       6 rows
+. . exported "GXCONTABLE"."CENTROCOSTO"                  33.53 KB     266 rows
+. . exported "GXCONTABLE"."COMPROBANTES"                 17.20 KB     107 rows
+. . exported "GXCONTABLE"."COMPROBANTESCLASE"            8.804 KB       4 rows
+. . exported "GXCONTABLE"."CONFIGPRESU"                  8.148 KB       1 rows
+. . exported "GXCONTABLE"."CONFIGURACIONCONTA"           7.328 KB       1 rows
+. . exported "GXCONTABLE"."DEPOSITOS"                    12.51 KB      48 rows
+. . exported "GXCONTABLE"."DISTRITOSCOMPRA"              8.609 KB      18 rows
+. . exported "GXCONTABLE"."EJERCICIOS"                   8.976 KB       1 rows
+. . exported "GXCONTABLE"."GRUPOSAUTORIZACION"           8.875 KB      16 rows
+. . exported "GXCONTABLE"."GRUPOSCOMPRA"                 8.679 KB      20 rows
+. . exported "GXCONTABLE"."GRUPOSPRODUCTO"               10.50 KB      27 rows
+. . exported "GXCONTABLE"."LOCALIDADES"                  22.04 KB     222 rows
+. . exported "GXCONTABLE"."MODULOS"                      7.640 KB       1 rows
+. . exported "GXCONTABLE"."MONEDAS"                      7.226 KB       1 rows
+. . exported "GXCONTABLE"."ORGANIGRAMA"                  6.460 KB       2 rows
+. . exported "GXCONTABLE"."ORGANIGRAMATIPO"              5.671 KB       7 rows
+. . exported "GXCONTABLE"."PARAMETROSSISTEMA"            7.015 KB       5 rows
+. . exported "GXCONTABLE"."PERIODOS"                     8.968 KB      12 rows
+. . exported "GXCONTABLE"."PLANCUENTASRELA"              14.03 KB     169 rows
+. . exported "GXCONTABLE"."PRESUESTRUCINFO"              8.976 KB      14 rows
+. . exported "GXCONTABLE"."PRESUPUESTOS"                 9.898 KB       1 rows
+. . exported "GXCONTABLE"."PROYECTOSCOMPRA"              8.203 KB       1 rows
+. . exported "GXCONTABLE"."REPOSITORY"                   30.32 KB       2 rows
+. . exported "GXCONTABLE"."REPOSITORYCONNECTION"         14.81 KB       2 rows
+. . exported "GXCONTABLE"."REPOSITORYNUM"                6.781 KB       6 rows
+. . exported "GXCONTABLE"."REPOSITORYPROP"               16.49 KB      49 rows
+. . exported "GXCONTABLE"."ROLE"                         16.32 KB       6 rows
+. . exported "GXCONTABLE"."RUBROPORCUENTA"               20.39 KB     169 rows
+. . exported "GXCONTABLE"."SECTORES"                     8.414 KB      11 rows
+. . exported "GXCONTABLE"."SECURITYPOLICY"               16.25 KB       2 rows
+. . exported "GXCONTABLE"."SECURITYPOLICYPROP"           7.195 KB       2 rows
+. . exported "GXCONTABLE"."SESSIONLOGATT"                7.804 KB       5 rows
+. . exported "GXCONTABLE"."SUBGRUPOSPRODUC"              22.53 KB     228 rows
+. . exported "GXCONTABLE"."SYSPAR"                       7.679 KB       4 rows
+. . exported "GXCONTABLE"."TIPOSFUENTE"                      8 KB      18 rows
+. . exported "GXCONTABLE"."UNIDADESMEDIDA"               8.132 KB      12 rows
+. . exported "GXCONTABLE"."UNIDADESOPERATIVAS"           8.265 KB      14 rows
+. . exported "GXCONTABLE"."UNIDADESPRESUPUESTARIAS"      8.757 KB      20 rows
+. . exported "GXCONTABLE"."UNIPRESUXDISTR"               8.281 KB      23 rows
+. . exported "GXCONTABLE"."USERAPPPRM"                   29.61 KB      15 rows
+. . exported "GXCONTABLE"."USERMEMROLE"                  8.289 KB       4 rows
+. . exported "GXCONTABLE"."USERPROP"                     6.843 KB       2 rows
+. . exported "GXCONTABLE"."USERREPOSITORY"               12.82 KB       6 rows
+. . exported "GXCONTABLE"."APPAUTHREQ"                       0 KB       0 rows
+. . exported "GXCONTABLE"."APPENVIRONMENTLNG"                0 KB       0 rows
+. . exported "GXCONTABLE"."APPLICATIONLNG"                   0 KB       0 rows
+. . exported "GXCONTABLE"."APPMENUPROP"                      0 KB       0 rows
+. . exported "GXCONTABLE"."APPPERMISSIONLNG"                 0 KB       0 rows
+. . exported "GXCONTABLE"."APPPERMISSIONPROP"                0 KB       0 rows
+. . exported "GXCONTABLE"."APPPRMTOKENTYPE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."APPPRMTOKENTYPEELE"               0 KB       0 rows
+. . exported "GXCONTABLE"."APPPRMTOKENTYPELNG"               0 KB       0 rows
+. . exported "GXCONTABLE"."APPROLE"                          0 KB       0 rows
+. . exported "GXCONTABLE"."APPROLEREST"                      0 KB       0 rows
+. . exported "GXCONTABLE"."APPTYPE"                          0 KB       0 rows
+. . exported "GXCONTABLE"."APPTYPEACTION"                    0 KB       0 rows
+. . exported "GXCONTABLE"."APPTYPEPERMISSION"                0 KB       0 rows
+. . exported "GXCONTABLE"."APPTYPEPRMMEMPRM"                 0 KB       0 rows
+. . exported "GXCONTABLE"."APPTYPERESOURCE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."ASIENTOCABECERA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."ASIENTOCABECERALINEA"             0 KB       0 rows
+. . exported "GXCONTABLE"."AUDITORY"                         0 KB       0 rows
+. . exported "GXCONTABLE"."AUDITORYACTION"                   0 KB       0 rows
+. . exported "GXCONTABLE"."AUDITORYACTIONLNG"                0 KB       0 rows
+. . exported "GXCONTABLE"."AUTHENTICATIONTYPELNG"            0 KB       0 rows
+. . exported "GXCONTABLE"."AUTHENTICATIONTYPEPROP"           0 KB       0 rows
+. . exported "GXCONTABLE"."AUTOMOTORESCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."AUTOMOTORESDETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."AUXILIARES"                       0 KB       0 rows
+. . exported "GXCONTABLE"."AUXILIARTIPOS"                    0 KB       0 rows
+. . exported "GXCONTABLE"."BANCOCORRECTORCABE"               0 KB       0 rows
+. . exported "GXCONTABLE"."BANCOCORRECTORDETA"               0 KB       0 rows
+. . exported "GXCONTABLE"."BIENMUEBLES"                      0 KB       0 rows
+. . exported "GXCONTABLE"."BROWSER"                          0 KB       0 rows
+. . exported "GXCONTABLE"."COMPRADORES"                      0 KB       0 rows
+. . exported "GXCONTABLE"."COMPRADORXGRUPCOMP"               0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBANTESCOMPRA"               0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBANTESRESTO"                0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBCOSTO"                     0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBLISTADOCABE"               0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBLISTADOCTOCOSTO"           0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBLISTADODETALLE"            0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBRELA"                      0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBXGP"                       0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBXPROD"                     0 KB       0 rows
+. . exported "GXCONTABLE"."COMPROBXSGP"                      0 KB       0 rows
+. . exported "GXCONTABLE"."CONDIPAGO"                        0 KB       0 rows
+. . exported "GXCONTABLE"."COUNTRY"                          0 KB       0 rows
+. . exported "GXCONTABLE"."COUNTRYLNG"                       0 KB       0 rows
+. . exported "GXCONTABLE"."CUENTAPORTIPOAUX"                 0 KB       0 rows
+. . exported "GXCONTABLE"."CUENTASXGRUPO"                    0 KB       0 rows
+. . exported "GXCONTABLE"."CUENTASXUSUARIO"                  0 KB       0 rows
+. . exported "GXCONTABLE"."DEPOSITOSHISTORICO"               0 KB       0 rows
+. . exported "GXCONTABLE"."DEVOLUCION"                       0 KB       0 rows
+. . exported "GXCONTABLE"."DEVOLUCIONPRODUCTO"               0 KB       0 rows
+. . exported "GXCONTABLE"."DEVOLUCIONUNIDAD"                 0 KB       0 rows
+. . exported "GXCONTABLE"."DEVOTEMP"                         0 KB       0 rows
+. . exported "GXCONTABLE"."ELECBOMBATLASCABE"                0 KB       0 rows
+. . exported "GXCONTABLE"."ELECBOMBATLASDETA"                0 KB       0 rows
+. . exported "GXCONTABLE"."ELECBOMBUAFCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."ELECBOMBUAFDETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."EQUIPODOSIFICADORCABE"            0 KB       0 rows
+. . exported "GXCONTABLE"."EQUIPODOSIFICADORDETA"            0 KB       0 rows
+. . exported "GXCONTABLE"."EQUIPOSCOMUNICCABE"               0 KB       0 rows
+. . exported "GXCONTABLE"."EQUIPOSCOMUNICDETA"               0 KB       0 rows
+. . exported "GXCONTABLE"."EVENTSUSCRIPTION"                 0 KB       0 rows
+. . exported "GXCONTABLE"."EVENTSUSCRIPTIONPROP"             0 KB       0 rows
+. . exported "GXCONTABLE"."EXISDETMOV"                       0 KB       0 rows
+. . exported "GXCONTABLE"."FACTUPROVECABE"                   0 KB       0 rows
+. . exported "GXCONTABLE"."FACTUPROVECABEITEMSF"             0 KB       0 rows
+. . exported "GXCONTABLE"."FACTUPROVEIMPU"                   0 KB       0 rows
+. . exported "GXCONTABLE"."FAMILIAS"                         0 KB       0 rows
+. . exported "GXCONTABLE"."FUENTESCATADGIAGRUCABE"           0 KB       0 rows
+. . exported "GXCONTABLE"."FUENTESCATADGIAGRUDETA"           0 KB       0 rows
+. . exported "GXCONTABLE"."FUENTESDGIDETALLCABE"             0 KB       0 rows
+. . exported "GXCONTABLE"."FUENTESDGIDETALLDETA"             0 KB       0 rows
+. . exported "GXCONTABLE"."GXA0017"                          0 KB       0 rows
+. . exported "GXCONTABLE"."HARDWARECABE"                     0 KB       0 rows
+. . exported "GXCONTABLE"."HARDWAREDETA"                     0 KB       0 rows
+. . exported "GXCONTABLE"."HERRAMIENTASCABE"                 0 KB       0 rows
+. . exported "GXCONTABLE"."HERRAMIENTASDETA"                 0 KB       0 rows
+. . exported "GXCONTABLE"."INSTALESTADOORICABE"              0 KB       0 rows
+. . exported "GXCONTABLE"."INSTALESTADOORIDETA"              0 KB       0 rows
+. . exported "GXCONTABLE"."INTEGRACIONEXISTCONTROL"          0 KB       0 rows
+. . exported "GXCONTABLE"."LABORATORIOCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."LABORATORIODETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."LETRASFACTU"                      0 KB       0 rows
+. . exported "GXCONTABLE"."LOGINTMP"                         0 KB       0 rows
+. . exported "GXCONTABLE"."LUGARESENTREGA"                   0 KB       0 rows
+. . exported "GXCONTABLE"."MAQUINARIASCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."MAQUINARIASDETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."MATRIZFUENTENRESPCABE"            0 KB       0 rows
+. . exported "GXCONTABLE"."MATRIZFUENTENRESPDETA"            0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESBAJACABE"                0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESBAJADETA"                0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESENRESPCABE"              0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESENRESPDETA"              0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESNGCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."MEDIDORESNGDETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."NIVELAUTO"                        0 KB       0 rows
+. . exported "GXCONTABLE"."OAUTHGRANTUSERAPP"                0 KB       0 rows
+. . exported "GXCONTABLE"."OFICINASCOMERCIALESCABE"          0 KB       0 rows
+. . exported "GXCONTABLE"."OFICINASCOMERCIALESDETA"          0 KB       0 rows
+. . exported "GXCONTABLE"."OPERATINGSYSTEM"                  0 KB       0 rows
+. . exported "GXCONTABLE"."ORDENCOMPRACABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."ORDENCOMPRACABEITEMSC"            0 KB       0 rows
+. . exported "GXCONTABLE"."ORGANIGRAMAHISTORICO"             0 KB       0 rows
+. . exported "GXCONTABLE"."ORGANISMOORIGENCABE"              0 KB       0 rows
+. . exported "GXCONTABLE"."ORGANISMOORIGENDETA"              0 KB       0 rows
+. . exported "GXCONTABLE"."PAIS"                             0 KB       0 rows
+. . exported "GXCONTABLE"."PRESUPUESTOSDETALLE"              0 KB       0 rows
+. . exported "GXCONTABLE"."PRODUCCUENTASTIPOS"               0 KB       0 rows
+. . exported "GXCONTABLE"."PRODUCXCUENTAS"                   0 KB       0 rows
+. . exported "GXCONTABLE"."PRODUCXUNIMED"                    0 KB       0 rows
+. . exported "GXCONTABLE"."PROVINCIA"                        0 KB       0 rows
+. . exported "GXCONTABLE"."REDESAGUACABE"                    0 KB       0 rows
+. . exported "GXCONTABLE"."REDESAGUADETA"                    0 KB       0 rows
+. . exported "GXCONTABLE"."REDESCLOACACABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."REDESCLOACADETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."REPOSITORYCONNADD"                0 KB       0 rows
+. . exported "GXCONTABLE"."REPOSITORYCOUNTRY"                0 KB       0 rows
+. . exported "GXCONTABLE"."REPOSITORYLNG"                    0 KB       0 rows
+. . exported "GXCONTABLE"."REPQUESTIONUSER"                  0 KB       0 rows
+. . exported "GXCONTABLE"."REPQUESTIONUSERLNG"               0 KB       0 rows
+. . exported "GXCONTABLE"."REQUECABECERA"                    0 KB       0 rows
+. . exported "GXCONTABLE"."REQUECABECERAREQUEITEMS"          0 KB       0 rows
+. . exported "GXCONTABLE"."RESPONSXCOMPROB"                  0 KB       0 rows
+. . exported "GXCONTABLE"."RETENGCIAS"                       0 KB       0 rows
+. . exported "GXCONTABLE"."ROLEAPPPRMPROP"                   0 KB       0 rows
+. . exported "GXCONTABLE"."ROLEAPPTYPEPRM"                   0 KB       0 rows
+. . exported "GXCONTABLE"."ROLEAPPTYPEPRMPROP"               0 KB       0 rows
+. . exported "GXCONTABLE"."ROLELNG"                          0 KB       0 rows
+. . exported "GXCONTABLE"."ROLEMEMROLE"                      0 KB       0 rows
+. . exported "GXCONTABLE"."ROLEPROP"                         0 KB       0 rows
+. . exported "GXCONTABLE"."RUBROSCOMPRAS"                    0 KB       0 rows
+. . exported "GXCONTABLE"."RUBROXCUENTACOMPRAS"              0 KB       0 rows
+. . exported "GXCONTABLE"."SECURITYPOLICYLNG"                0 KB       0 rows
+. . exported "GXCONTABLE"."SESSIONHISTORY"                   0 KB       0 rows
+. . exported "GXCONTABLE"."SESSIONHISTORYLOG"                0 KB       0 rows
+. . exported "GXCONTABLE"."SESSIONHISTORYLOGATT"             0 KB       0 rows
+. . exported "GXCONTABLE"."SESSIONLOG"                       0 KB       0 rows
+. . exported "GXCONTABLE"."SOFTWARECABE"                     0 KB       0 rows
+. . exported "GXCONTABLE"."SOFTWAREDETA"                     0 KB       0 rows
+. . exported "GXCONTABLE"."TABLEROSUAFCABE"                  0 KB       0 rows
+. . exported "GXCONTABLE"."TABLEROSUAFDETA"                  0 KB       0 rows
+. . exported "GXCONTABLE"."TIPOBIENMUEBLES"                  0 KB       0 rows
+. . exported "GXCONTABLE"."UBICACIONTEST"                    0 KB       0 rows
+. . exported "GXCONTABLE"."USERAPP"                          0 KB       0 rows
+. . exported "GXCONTABLE"."USERAPPPRMPROP"                   0 KB       0 rows
+. . exported "GXCONTABLE"."USERAPPPROP"                      0 KB       0 rows
+. . exported "GXCONTABLE"."USERATT"                          0 KB       0 rows
+. . exported "GXCONTABLE"."USERATTMULTIVALUE"                0 KB       0 rows
+. . exported "GXCONTABLE"."USERHISPWD"                       0 KB       0 rows
+. . exported "GXCONTABLE"."USERMEMAPPROLE"                   0 KB       0 rows
+. . exported "GXCONTABLE"."USERMEMAPPROLEPROP"               0 KB       0 rows
+. . exported "GXCONTABLE"."USERMEMAPPROLEREST"               0 KB       0 rows
+. . exported "GXCONTABLE"."USERMEMROLEPROP"                  0 KB       0 rows
+. . exported "GXCONTABLE"."USERREPOSITORYPROP"               0 KB       0 rows
+. . exported "GXCONTABLE"."USUARIOSXMODULO"                  0 KB       0 rows
+Master table "GXCONTABLE"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for GXCONTABLE.SYS_EXPORT_SCHEMA_01 is:
+  /backup/GXCONTABLE_backup.dmp
+Job "GXCONTABLE"."SYS_EXPORT_SCHEMA_01" successfully completed at 14:10:46
