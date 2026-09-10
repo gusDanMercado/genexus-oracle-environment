@@ -187,11 +187,13 @@ y utilizo un codigo para **APPLICATION ID** y el otro codigo para **REPOSITORY I
 Tambien actualizamos:  
 * Administrator User Name: admin
 * Administrator User Password: admin123
-* Connection User Name: sistemainventarioprodgam
-* Connection User Password: sistemainventarioprodgam123
+* Connection User Name: modulocentral
+* Connection User Password: modulocentral123
 
-Una vez modificado esto realizamos: **Tools** &rarr; **Genexus Access Manager** &rarr; **Create Tables**  
-Esto vuelve a generar la estructura y configuraciones de GAM.
+Una vez modificado esto realizamos: **Tools** &rarr; **Genexus Access Manager** &rarr; **Create Tables**  (No hace falta, solo hay que ejecutar el Build)
+Esto vuelve a generar la estructura y configuraciones de GAM.  
+
+Nota: Esto hay que hacerlo en las tres **Kbs**
 
 9. Realizamos un **Build** y como es la primera coneccion nos tiene que pedir crear toda la estructura de datos nuevamente.
 
