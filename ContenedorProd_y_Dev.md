@@ -385,7 +385,20 @@ Luego de modificar el archivo ejecutamos:
 tnsping MSSQL       # ME DEVUELVE OK
 ```
 
-Con esto estaria todo listo.
+Con esto estaria todo listo, y en este caso no haria falta crear el **Database Link** ya que se incluyo cuando realizamos el restore de GXCONTABLE. Ahora en Dbeaver loguado como GXCONTABLE puedo realizar las siguientes consultas:
+
+```sql
+-- SINTAXIS PARA HACER ALGUNOS SELECT
+SELECT *
+FROM "dbo"."NUEVAS_LOCALIDADES"@MSSQL
+WHERE ROWNUM <= 5;
+
+SELECT * FROM "auxiliares"@MSSQL;
+
+SELECT *
+FROM "auxiliares"@MSSQL
+WHERE UPPER("auxi_tipo") LIKE '%LOCAL%';
+```
 
 Ahora para hacer que el contenedor se inicialice automaticamente cada vez que se prende o reinicia el servidor ejecutamos los comandos:
 ```bash
