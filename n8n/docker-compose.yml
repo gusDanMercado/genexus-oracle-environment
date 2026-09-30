@@ -1,0 +1,24 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: unless-stopped
+
+    ports:
+      - "5678:5678"
+
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+      - GENERIC_TIMEZONE=America/Argentina/Buenos_Aires
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - NODES_EXCLUDE=[]
+
+    volumes:
+      # Persistencia de n8n
+      - n8n_data:/home/node/.n8n
+
+      # Solo lectura de los backups/logs de Oracle
+      - C:/GustavoMercado/genexus-oracle-environment/backup:/files/oracle-backup:ro
+
+volumes:
+  n8n_data:

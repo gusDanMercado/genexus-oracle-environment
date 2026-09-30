@@ -1,2 +1,4 @@
 backup/
 scripts/oracle_backup_password.txt
+n8n/workflows/EnvioNotificacionBackup.json
+n8n/workflows/EnvioNotificacionBackupV2.json
