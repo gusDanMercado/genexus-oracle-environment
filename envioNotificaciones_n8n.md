@@ -49,3 +49,7 @@ docker compose up -d
 5. Ejecutamos y si no da ningun error, lo publicamos con el boton **Publish**. 
 
 ![imagen](n8n/img/Flujo04.png)
+
+6. En caso de querer desativar la ejecucion de este flujo de trabajo, lo hacemos con el **Unpublish**.
+
+8. Este Workflow lo puedo replicar en cualquier PC, lo unico que se cargan de nuevo son las credenciales de Telegram (use el mismo bot **Backup Oracle** creado anteriormente y no tuve problemas).
