@@ -388,6 +388,12 @@ tnsping MSSQL       # ME DEVUELVE OK
 Con esto estaria todo listo, y en este caso no haria falta crear el **Database Link** ya que se incluyo cuando realizamos el restore de GXCONTABLE. Ahora en Dbeaver loguado como GXCONTABLE puedo realizar las siguientes consultas:
 
 ```sql
+-- En mi base de datos:
+CREATE DATABASE LINK MSSQL
+CONNECT TO "america"
+IDENTIFIED BY "TU_PASSWORD"
+USING 'MSSQL';
+
 -- SINTAXIS PARA HACER ALGUNOS SELECT
 SELECT *
 FROM "dbo"."NUEVAS_LOCALIDADES"@MSSQL
