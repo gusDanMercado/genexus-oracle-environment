@@ -404,6 +404,14 @@ SELECT * FROM "auxiliares"@MSSQL;
 SELECT *
 FROM "auxiliares"@MSSQL
 WHERE UPPER("auxi_tipo") LIKE '%LOCAL%';
+
+SELECT * FROM "adm_comando"@MSSQL;
+
+SELECT * FROM "zonas"@MSSQL;
+
+SELECT * FROM "usua_permi"@MSSQL;
+
+SELECT * FROM "centros_costo"@MSSQL;
 ```
 
 Ahora para hacer que el contenedor se inicialice automaticamente cada vez que se prende o reinicia el servidor ejecutamos los comandos:
